@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Astoria Palawan Resort Study | Puerto Princesa, Palawan</title>
+  <meta name="description" content="An educational tourism website inspired by Astoria Palawan, a resort on the Sulu Sea in Puerto Princesa, Palawan. School project: not the official website.">
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="notice-bar" role="note">
+    Educational school project inspired by <strong>Astoria Palawan</strong>. This is <strong>not</strong> the official website and is not affiliated with the resort.
+    <a href="https://astoriapalawan.com/" target="_blank" rel="noopener">Visit the official site &rarr;</a>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Astoria Palawan Resort Study, home">
+        <span class="brand-mark" aria-hidden="true">A</span>
+        <span class="brand-text"><strong>Astoria Palawan</strong><small>Resort Study &middot; Puerto Princesa</small></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primaryNav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#rooms">Rooms &amp; Amenities</a></li>
+          <li><a href="#restaurant">Restaurant</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="btn btn-gold btn-sm" href="#reservations" data-book-type="room">Book Your Stay</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HOME -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <img class="hero-img" src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1800&q=75" alt="Resort infinity pool beside a tropical sea (illustrative stock photo)" fetchpriority="high">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">Resort study &middot; Puerto Princesa, Palawan</p>
+        <h1 id="hero-title">Reconnect with nature on the Sulu Sea</h1>
+        <p class="lead">An eight-hectare resort set between the Sulu Sea shore, virgin forest, grasslands and mountain ranges, about 90 minutes from Puerto Princesa International Airport. This site presents Astoria Palawan as a tourism case study.</p>
+        <div class="btn-row">
+          <a class="btn btn-gold" href="#reservations" data-book-type="room">Book Your Stay</a>
+          <a class="btn btn-ghost" href="#rooms">Explore Our Resort</a>
+        </div>
+
+        <form class="quick-book" id="quickBook" aria-label="Quick booking inquiry">
+          <div class="field">
+            <label for="qbDate">Check-in</label>
+            <input type="date" id="qbDate">
+          </div>
+          <div class="field">
+            <label for="qbNights">Nights</label>
+            <input type="number" id="qbNights" min="1" max="30" value="2">
+          </div>
+          <div class="field">
+            <label for="qbGuests">Guests</label>
+            <input type="number" id="qbGuests" min="1" max="20" value="2">
+          </div>
+          <button class="btn btn-gold" type="submit">Start an Inquiry</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Resort at a glance">
+      <div class="container stats-grid">
+        <div><strong>8 ha</strong><span>resort grounds</span></div>
+        <div><strong>39 m</strong><span>infinity pool, &ldquo;The Pod&rdquo;</span></div>
+        <div><strong>1 ha</strong><span>Palawan Waterpark</span></div>
+        <div><strong>~90 min</strong><span>from the airport</span></div>
+      </div>
+      <p class="container stats-source">Figures as published on <a href="https://astoriapalawan.com/" target="_blank" rel="noopener">astoriapalawan.com</a>.</p>
+    </section>
+
+    <section class="section" aria-labelledby="featured-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow dark">Featured accommodations</p>
+          <h2 id="featured-title">Three ways to stay</h2>
+          <p>The resort groups its rooms into The Nest, The Alcove and the Villas. Each is shown here as a case-study card.</p>
+        </header>
+        <div class="grid-3">
+          <article class="card feature-card">
+            <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=800&q=70" alt="Bright, plush hotel bedroom (illustrative stock photo)" loading="lazy">
+            <div class="card-body">
+              <h3>The Nest</h3>
+              <p>A tranquil hideaway with bright interiors and plush bedding, suited to couples or solo travelers.</p>
+              <a class="link-arrow" href="#rooms">See the rooms</a>
+            </div>
+          </article>
+          <article class="card feature-card">
+            <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=800&q=70" alt="Room with a terrace overlooking green mountains (illustrative stock photo)" loading="lazy">
+            <div class="card-body">
+              <h3>The Alcove</h3>
+              <p>Wake up to lush tropical greens for serene mornings.</p>
+              <a class="link-arrow" href="#rooms">See the rooms</a>
+            </div>
+          </article>
+          <article class="card feature-card">
+            <img src="https://images.unsplash.com/photo-1602343168117-bb8ffe3e2e9f?auto=format&fit=crop&w=800&q=70" alt="Modern villa with a private pool terrace (illustrative stock photo)" loading="lazy">
+            <div class="card-body">
+              <h3>The Villas</h3>
+              <p>Spacious villas just steps from tranquil waters.</p>
+              <a class="link-arrow" href="#rooms">See the rooms</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tint" aria-labelledby="explore-title">
+      <div class="container split">
+        <div class="split-text">
+          <p class="eyebrow dark">Beyond the resort</p>
+          <h2 id="explore-title">Palawan is on your doorstep</h2>
+          <p>The resort's website lists these nearby experiences for guests who want to explore Puerto Princesa:</p>
+          <ul class="chips">
+            <li>Puerto Princesa Underground River</li>
+            <li>Irawan Eco Park</li>
+            <li>Binduyan Falls</li>
+            <li>Crocodile Farm</li>
+            <li>Iwahig River Firefly Watching</li>
+            <li>Baker's Hill</li>
+          </ul>
+          <a class="btn btn-green" href="https://astoriapalawan.com/explore" target="_blank" rel="noopener">Official Explore page</a>
+        </div>
+        <figure class="split-media">
+          <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1000&q=70" alt="Tropical pool surrounded by palms and mountains (illustrative stock photo)" loading="lazy">
+          <figcaption>Illustrative stock photo.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="promo-title">
+      <div class="container">
+        <div class="promo-banner">
+          <div>
+            <p class="eyebrow">Promotions &amp; guest reviews</p>
+            <h2 id="promo-title">Current offers and real guest reviews live on the official channels</h2>
+            <p>This project does not publish invented testimonials or promo terms. See the resort's current promos and its TripAdvisor reviews directly.</p>
+          </div>
+          <div class="btn-row">
+            <a class="btn btn-gold" href="https://astoriapalawan.com/special-offers" target="_blank" rel="noopener">Official Promos</a>
+            <a class="btn btn-ghost" href="https://astoriapalawan.com/" target="_blank" rel="noopener">Guest Reviews</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section tint" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow dark">About</p>
+          <h2 id="about-title">The resort, and why we studied it</h2>
+        </header>
+        <div class="split">
+          <div class="split-text">
+            <h3>Hospitality concept</h3>
+            <p>Astoria Palawan is a resort in Puerto Princesa that &ldquo;kisses the shores of the majestic Sulu Sea.&rdquo; It is promoted as a family-centric, eco-friendly resort surrounded by lush landscapes, and as a quiet escape from the city.</p>
+            <p>According to its official About page, it uses green materials and practices, including VRF air conditioning and solar panels that the resort says save up to 40% on electricity.</p>
+            <h3>Facilities, per the official site</h3>
+            <p>A 39-meter infinity pool, a recreation pavilion with karaoke and games, in-house restaurants and a bar, the Mangrove Conference and Convention Center, and the one-hectare Palawan Waterpark.</p>
+            <h3>About this project</h3>
+            <p>This website is a tourism-class case study. It borrows the structure of a real resort website (hero, accommodations, amenities, dining, offers, contact) and rebuilds it as an original design with its own code, wording and layout. Photos are generic stock images, not the resort's photography.</p>
+          </div>
+          <aside class="info-panel">
+            <h3>Case-study notes</h3>
+            <dl>
+              <dt>Reference resort</dt>
+              <dd>Astoria Palawan, Puerto Princesa, Palawan</dd>
+              <dt>Part of</dt>
+              <dd>The Astoria Group, which also operates resorts in Boracay, Bohol and Tagaytay, and a hotel in Ortigas</dd>
+              <dt>Target market</dt>
+              <dd>Families, couples, groups, and meetings &amp; events clients (the site promotes the Mangrove Conference &amp; Convention Center)</dd>
+              <dt>Selling points</dt>
+              <dd>Sea-facing setting, forest and mountain backdrop, large pools, an on-site waterpark, eco-minded operations</dd>
+              <dt>Mission &amp; vision</dt>
+              <dd>The resort does not publish these on its About page, so none are invented here.</dd>
+            </dl>
+          </aside>
+        </div>
+
+        <div class="getting-there">
+          <h3>Getting there <span class="tag">per official About page, confirm before travel</span></h3>
+          <div class="grid-3">
+            <div class="mini-card"><h4>Exclusive van transfer</h4><p>&#8369;4,500 per way per van (up to 8 guests) from Puerto Princesa Airport. Reserve at least 72 hours ahead by email.</p></div>
+            <div class="mini-card"><h4>Shared shuttle</h4><p>&#8369;700 per person per way. Reserve at least 72 hours ahead by email.</p></div>
+            <div class="mini-card"><h4>City shuttle</h4><p>&#8369;250 per person per way between the resort and the Astoria Palawan Sales Office at Mercado de San Miguel, near the airport.</p></div>
+          </div>
+          <p class="small">Senior citizens, persons with disabilities and students are listed as getting 20% off the city and shared shuttle fares with a valid ID. Schedules change: always confirm with the resort.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROOMS & AMENITIES -->
+    <section class="section" id="rooms" aria-labelledby="rooms-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow dark">Rooms &amp; Amenities</p>
+          <h2 id="rooms-title">Rooms and suites</h2>
+          <p>Room names and bed configurations are taken from the official homepage. Occupancy, size and in-room features are not published there, so ask the resort. Prices marked <span class="demo-badge">Demo</span> are illustrative classroom figures, <strong>not</strong> Astoria's rates.</p>
+        </header>
+
+        <div class="grid-3 rooms-grid">
+          <article class="card room-card">
+            <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=800&q=70" alt="Bedroom with plush bedding (illustrative stock photo)" loading="lazy">
+            <div class="card-body">
+              <p class="kicker">The Nest</p>
+              <h3>Superior Plus Room</h3>
+              <p>Bright interiors and plush bedding in a tranquil hideaway.</p>
+              <ul class="facts"><li><strong>Beds:</strong> 2 Queen</li><li><strong>Occupancy:</strong> confirm with resort</li></ul>
+              <p class="price"><span class="demo-badge">Demo</span> &#8369;4,800 <small>/ night, illustrative</small></p>
+              <button class="btn btn-green" data-book-type="room" data-book-item="nest">Inquire About This Room</button>
+            </div>
+          </article>
+          <article class="card room-card">
+            <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=800&q=70" alt="Room terrace with green mountain view (illustrative stock photo)" loading="lazy">
+            <div class="card-body">
+              <p class="kicker">The Alcove</p>
+              <h3>Superior Room</h3>
+              <p>Lush tropical greens for serene mornings.</p>
+              <ul class="facts"><li><strong>Beds:</strong> 1 or 2 Queen</li><li><strong>Occupancy:</strong> confirm with resort</li></ul>
+              <p class="price"><span class="demo-badge">Demo</span> &#8369;4,200 <small>/ night, illustrative</small></p>
+              <button class="btn btn-green" data-book-type="room" data-book-item="alcove">Inquire About This Room</button>
+            </div>
+          </article>
+          <article class="card room-card">
+            <img src="https://images.unsplash.com/photo-1602002418082-a4443e081dd1?auto=format&fit=crop&w=800&q=70" alt="Villa room with a deck facing the sea (illustrative stock photo)" loading="lazy">
+            <div class="card-body">
+              <p class="kicker">Villas</p>
+              <h3>Villa Deluxe Room</h3>
+              <p>Spacious, steps from tranquil waters.</p>
+              <ul class="facts"><li><strong>Beds:</strong> 2 Queen</li><li><strong>Occupancy:</strong> confirm with resort</li></ul>
+              <p class="price"><span class="demo-badge">Demo</span> &#8369;6,500 <small>/ night, illustrative</small></p>
+              <button class="btn btn-green" data-book-type="room" data-book-item="villa-deluxe">Inquire About This Room</button>
+            </div>
+          </article>
+          <article class="card room-card">
+            <img src="https://images.unsplash.com/photo-1602343168117-bb8ffe3e2e9f?auto=format&fit=crop&w=800&q=70" alt="Villa exterior with a pool (illustrative stock photo)" loading="lazy">
+            <div class="card-body">
+              <p class="kicker">Villas</p>
+              <h3>Villa One-Bedroom Suite</h3>
+              <p>A suite with a separate bedroom, ideal for couples and small families.</p>
+              <ul class="facts"><li><strong>Beds:</strong> 2 Queen</li><li><strong>Occupancy:</strong> confirm with resort</li></ul>
+              <p class="price"><span class="demo-badge">Demo</span> &#8369;8,900 <small>/ night, illustrative</small></p>
+              <button class="btn btn-green" data-book-type="room" data-book-item="villa-1br">Inquire About This Room</button>
+            </div>
+          </article>
+          <article class="card room-card">
+            <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=70" alt="Tropical villa grounds with a pool (illustrative stock photo)" loading="lazy">
+            <div class="card-body">
+              <p class="kicker">Villas</p>
+              <h3>Villa Two-Bedroom Suite</h3>
+              <p>Room for larger families and groups traveling together.</p>
+              <ul class="facts"><li><strong>Beds:</strong> 4 Queen</li><li><strong>Occupancy:</strong> confirm with resort</li></ul>
+              <p class="price"><span class="demo-badge">Demo</span> &#8369;14,500 <small>/ night, illustrative</small></p>
+              <button class="btn btn-green" data-book-type="room" data-book-item="villa-2br">Inquire About This Room</button>
+            </div>
+          </article>
+          <article class="card room-card rates-card">
+            <div class="card-body">
+              <p class="kicker">Real rates</p>
+              <h3>Need official prices?</h3>
+              <p>Only the resort can give accurate rates and availability. Use the official booking engine or contact the reservations office.</p>
+              <a class="btn btn-gold" href="https://book-directonline.com/properties/AstoriaPalawandirect" target="_blank" rel="noopener">Official Booking Site</a>
+            </div>
+          </article>
+        </div>
+
+        <header class="section-head mt">
+          <h2>Resort amenities</h2>
+          <p>Descriptions and hours are from the official Amenities page.</p>
+        </header>
+        <div class="grid-3 amenities">
+          <article class="amenity">
+            <h3>The Pod</h3>
+            <p>A 39-meter outdoor infinity pool that appears to spill over the Sulu Sea, with sunken loungers, a kiddie pool and night lighting.</p>
+            <span class="hours">6:00 AM &ndash; 10:00 PM</span>
+          </article>
+          <article class="amenity">
+            <h3>The Premier Pod</h3>
+            <p>A 22-meter exclamation-point-shaped pool near the Premier Rooms on the villa side, with a beach view.</p>
+            <span class="hours">6:00 AM &ndash; 10:00 PM</span>
+          </article>
+          <article class="amenity">
+            <h3>Nestling Pool</h3>
+            <p>A 27.43-meter pool outside The Nest building with a kiddie pool, in front of Fine Nest, Rise &amp; Roast.</p>
+            <span class="hours">6:00 AM &ndash; 10:00 PM</span>
+          </article>
+          <article class="amenity">
+            <h3>Spa-tify</h3>
+            <p>Body, facial and aromatherapy treatments from trained professionals.</p>
+            <span class="hours">10:00 AM &ndash; 12:00 AM (as listed)</span>
+          </article>
+          <article class="amenity">
+            <h3>Gym</h3>
+            <p>Free weights, benches, treadmills and stationary bikes.</p>
+            <span class="hours">6:00 AM &ndash; 10:00 PM</span>
+          </article>
+          <article class="amenity">
+            <h3>Flash Mart</h3>
+            <p>A convenience store for basics, ice cream and snacks.</p>
+            <span class="hours">7:00 AM &ndash; 12:00 AM</span>
+          </article>
+        </div>
+
+        <div class="grid-2 activities">
+          <figure class="card media-card">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=70" alt="Spa and relaxation setting (illustrative stock photo)" loading="lazy" data-fallback-label="Relaxation">
+          </figure>
+          <div class="callout">
+            <h3>Palawan Waterpark by Astoria</h3>
+            <p>Described on the official site as Puerto Princesa's largest waterpark, and a one-hectare attraction next to the resort. Also on site: a recreation pavilion with karaoke and games, and the Mangrove Conference &amp; Convention Center for events.</p>
+            <a class="link-arrow" href="https://astoriapalawan.com/waterpark" target="_blank" rel="noopener">Plan a visit on the official site</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESTAURANT -->
+    <section class="section dark" id="restaurant" aria-labelledby="resto-title">
+      <div class="container">
+        <header class="section-head light">
+          <p class="eyebrow">Restaurant</p>
+          <h2 id="resto-title">Resort dining</h2>
+          <p>The official site describes &ldquo;native and multicultural flavors&rdquo; and Filipino and international offerings prepared fresh by master chefs. It does not publish menus or prices, so the dishes below are <strong>illustrative categories</strong> for the project and carry no prices.</p>
+        </header>
+
+        <div class="outlets">
+          <article class="outlet">
+            <h3>The Reserve</h3>
+            <p>The resort's main on-site restaurant, which its blog features for &ldquo;island cravings.&rdquo;</p>
+          </article>
+          <article class="outlet">
+            <h3>The Habitat</h3>
+            <p>Another outlet named in the resort's own promotions.</p>
+          </article>
+          <article class="outlet">
+            <h3>Fine Nest, Rise &amp; Roast</h3>
+            <p>Located in front of the Nestling Pool, outside The Nest building.</p>
+          </article>
+          <article class="outlet">
+            <h3>Aqua Cena</h3>
+            <p>An events and dining venue featured on the resort homepage.</p>
+          </article>
+        </div>
+        <p class="small light">Outlet names come from the resort's official pages. Menus, hours and descriptions beyond what is shown here were not published, so please ask the resort.</p>
+
+        <div class="menu-tabs" role="tablist" aria-label="Menu categories">
+          <button role="tab" id="tab-breakfast" aria-selected="true" aria-controls="panel-breakfast">Breakfast</button>
+          <button role="tab" id="tab-mains" aria-selected="false" aria-controls="panel-mains" tabindex="-1">Main Courses</button>
+          <button role="tab" id="tab-desserts" aria-selected="false" aria-controls="panel-desserts" tabindex="-1">Desserts</button>
+          <button role="tab" id="tab-drinks" aria-selected="false" aria-controls="panel-drinks" tabindex="-1">Beverages</button>
+        </div>
+
+        <div class="menu-panels">
+          <div role="tabpanel" id="panel-breakfast" aria-labelledby="tab-breakfast" class="menu-panel">
+            <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=800&q=70" alt="Stack of pancakes with fruit and syrup (illustrative stock photo)" loading="lazy">
+            <ul>
+              <li><h4>Silog plates</h4><p>Garlic rice and egg with a choice of Filipino cured meats.</p></li>
+              <li><h4>Tropical pancakes</h4><p>Served with fresh fruit and syrup.</p></li>
+              <li><h4>Fruit and yogurt bowl</h4><p>Seasonal Philippine fruit.</p></li>
+            </ul>
+          </div>
+          <div role="tabpanel" id="panel-mains" aria-labelledby="tab-mains" class="menu-panel" hidden>
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=70" alt="Assorted plated main dishes (illustrative stock photo)" loading="lazy">
+            <ul>
+              <li><h4>Grilled catch of the day</h4><p>Island-style seafood with a calamansi dip.</p></li>
+              <li><h4>Slow-cooked pork or beef</h4><p>A hearty Filipino comfort dish.</p></li>
+              <li><h4>Vegetable and coconut curry</h4><p>Plant-based option with steamed rice.</p></li>
+            </ul>
+          </div>
+          <div role="tabpanel" id="panel-desserts" aria-labelledby="tab-desserts" class="menu-panel" hidden>
+            <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=800&q=70" alt="Glazed sprinkled donuts (illustrative stock photo)" loading="lazy">
+            <ul>
+              <li><h4>Ube creations</h4><p>Purple yam desserts, a Philippine favorite.</p></li>
+              <li><h4>Halo-halo</h4><p>Shaved ice with sweet beans, fruit and leche flan.</p></li>
+              <li><h4>Mango treats</h4><p>Seasonal Philippine mango.</p></li>
+            </ul>
+          </div>
+          <div role="tabpanel" id="panel-drinks" aria-labelledby="tab-drinks" class="menu-panel" hidden>
+            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=800&q=70" alt="Seaside dining terrace for sunset drinks (illustrative stock photo)" loading="lazy">
+            <ul>
+              <li><h4>Fresh fruit shakes</h4><p>Mango, watermelon and calamansi.</p></li>
+              <li><h4>Native coffee</h4><p>Philippine-grown beans.</p></li>
+              <li><h4>Sunset cocktails</h4><p>Served at the resort bar.</p></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="btn-row center">
+          <button class="btn btn-gold" data-book-type="restaurant" data-book-item="reserve">Reserve a Table (Demo)</button>
+          <button class="btn btn-ghost" data-book-type="restaurant" data-book-item="habitat">Dining Inquiry</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PACKAGES -->
+    <section class="section" id="packages" aria-labelledby="pkg-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow dark">Packages</p>
+          <h2 id="pkg-title">Sample itineraries</h2>
+          <p>These three packages are <strong>concept packages designed for the project</strong> using the resort's real amenities. They are not Astoria's offers, and the <span class="demo-badge">Demo</span> prices are illustrative only. For real promos, see the <a href="https://astoriapalawan.com/special-offers" target="_blank" rel="noopener">official Promos page</a>.</p>
+        </header>
+        <div class="grid-3">
+          <article class="card package">
+            <div class="card-body">
+              <p class="kicker">Couples</p>
+              <h3>Romantic Getaway</h3>
+              <p>Slow mornings, sunset by the pool and a private dinner.</p>
+              <ul class="checks">
+                <li>2 nights in a Villa Deluxe Room</li>
+                <li>Daily breakfast for two</li>
+                <li>One dinner at The Reserve</li>
+                <li>One spa session at Spa-tify</li>
+              </ul>
+              <p class="price"><span class="demo-badge">Demo</span> &#8369;24,000 <small>for 2 nights, 2 guests</small></p>
+              <button class="btn btn-green" data-book-type="package" data-book-item="romantic">Reserve This Package</button>
+            </div>
+          </article>
+          <article class="card package featured">
+            <div class="card-body">
+              <p class="kicker">Families</p>
+              <h3>Family Vacation</h3>
+              <p>Pools, the waterpark and room for everyone.</p>
+              <ul class="checks">
+                <li>3 nights in a Villa One-Bedroom Suite</li>
+                <li>Daily breakfast for the family</li>
+                <li>Waterpark visit</li>
+                <li>Airport shuttle booking assistance</li>
+              </ul>
+              <p class="price"><span class="demo-badge">Demo</span> &#8369;42,000 <small>for 3 nights, up to 4 guests</small></p>
+              <button class="btn btn-gold" data-book-type="package" data-book-item="family">Reserve This Package</button>
+            </div>
+          </article>
+          <article class="card package">
+            <div class="card-body">
+              <p class="kicker">Foodies</p>
+              <h3>Stay-and-Dine</h3>
+              <p>A relaxed stay built around the resort's restaurants.</p>
+              <ul class="checks">
+                <li>2 nights in an Alcove Superior Room</li>
+                <li>Daily breakfast for two</li>
+                <li>Lunch and dinner credit across outlets</li>
+                <li>Welcome drink at the bar</li>
+              </ul>
+              <p class="price"><span class="demo-badge">Demo</span> &#8369;16,500 <small>for 2 nights, 2 guests</small></p>
+              <button class="btn btn-green" data-book-type="package" data-book-item="stay-dine">Reserve This Package</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESERVATIONS -->
+    <section class="section tint" id="reservations" aria-labelledby="res-title">
+      <div class="container narrow">
+        <header class="section-head">
+          <p class="eyebrow dark">Reservations</p>
+          <h2 id="res-title">Booking inquiry (demo)</h2>
+        </header>
+
+        <div class="alert alert-warn" role="note">
+          <strong>Demonstration only.</strong> This is a static website with no server. Nothing you enter is sent to Astoria Palawan, saved, or checked for availability, and no booking is made. To make a real reservation, contact the resort or use its <a href="https://book-directonline.com/properties/AstoriaPalawandirect" target="_blank" rel="noopener">official booking site</a>.
+        </div>
+
+        <form id="resForm" class="form" novalidate>
+          <fieldset class="type-picker">
+            <legend>Reservation type</legend>
+            <label><input type="radio" name="type" value="room" checked> Room</label>
+            <label><input type="radio" name="type" value="restaurant"> Restaurant</label>
+            <label><input type="radio" name="type" value="package"> Package</label>
+          </fieldset>
+
+          <div class="form-grid">
+            <div class="field">
+              <label for="fullName">Full name <span aria-hidden="true">*</span></label>
+              <input id="fullName" name="fullName" type="text" autocomplete="name" required aria-describedby="fullName-err">
+              <p class="error" id="fullName-err" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="email">Email address <span aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-err">
+              <p class="error" id="email-err" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="phone">Phone number <span aria-hidden="true">*</span></label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+63 9XX XXX XXXX" required aria-describedby="phone-err">
+              <p class="error" id="phone-err" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="item" id="itemLabel">Room <span aria-hidden="true">*</span></label>
+              <select id="item" name="item" required aria-describedby="item-err"></select>
+              <p class="error" id="item-err" aria-live="polite"></p>
+            </div>
+
+            <div class="field" data-for="room package">
+              <label for="checkin">Check-in date <span aria-hidden="true">*</span></label>
+              <input id="checkin" name="checkin" type="date" aria-describedby="checkin-err">
+              <p class="error" id="checkin-err" aria-live="polite"></p>
+            </div>
+            <div class="field" data-for="room package">
+              <label for="checkout">Check-out date <span aria-hidden="true">*</span></label>
+              <input id="checkout" name="checkout" type="date" aria-describedby="checkout-err">
+              <p class="error" id="checkout-err" aria-live="polite"></p>
+            </div>
+
+            <div class="field" data-for="restaurant" hidden>
+              <label for="diningDate">Dining date <span aria-hidden="true">*</span></label>
+              <input id="diningDate" name="diningDate" type="date" aria-describedby="diningDate-err">
+              <p class="error" id="diningDate-err" aria-live="polite"></p>
+            </div>
+            <div class="field" data-for="restaurant" hidden>
+              <label for="diningTime">Preferred time <span aria-hidden="true">*</span></label>
+              <input id="diningTime" name="diningTime" type="time" aria-describedby="diningTime-err">
+              <p class="error" id="diningTime-err" aria-live="polite"></p>
+            </div>
+
+            <div class="field">
+              <label for="guests">Number of guests <span aria-hidden="true">*</span></label>
+              <input id="guests" name="guests" type="number" min="1" max="20" value="2" required aria-describedby="guests-err">
+              <p class="error" id="guests-err" aria-live="polite"></p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="requests">Special requests <span class="opt">(optional)</span></label>
+            <textarea id="requests" name="requests" rows="4" maxlength="500"></textarea>
+          </div>
+
+          <div class="field check">
+            <label><input type="checkbox" id="demoAck" name="demoAck" required aria-describedby="demoAck-err"> I understand this is a classroom demo and no real reservation will be made. <span aria-hidden="true">*</span></label>
+            <p class="error" id="demoAck-err" aria-live="polite"></p>
+          </div>
+
+          <button class="btn btn-green" type="submit">Review My Inquiry</button>
+          <noscript><p class="error show">JavaScript is needed for this demo form. To make a real inquiry, email reservations@astoriapalawan.com.</p></noscript>
+        </form>
+
+        <section id="reviewPanel" class="review" hidden aria-labelledby="review-title" tabindex="-1">
+          <h3 id="review-title">Review your inquiry</h3>
+          <dl id="reviewList"></dl>
+          <div class="btn-row">
+            <button class="btn btn-gold" id="confirmBtn" type="button">Submit Demo Inquiry</button>
+            <button class="btn btn-outline" id="editBtn" type="button">Edit Details</button>
+          </div>
+        </section>
+
+        <section id="successPanel" class="success" hidden aria-labelledby="success-title" tabindex="-1">
+          <h3 id="success-title">Demo inquiry recorded on this screen</h3>
+          <p>Reference number: <strong id="refNo" class="ref"></strong></p>
+          <p><strong>This is not a booking confirmation.</strong> Your details were not sent to Astoria Palawan or saved anywhere. The reference number was generated in your browser for demonstration.</p>
+          <p>To make a real inquiry, email <a href="mailto:reservations@astoriapalawan.com">reservations@astoriapalawan.com</a> or call (+63) 998-961-3419 (reservations office hours 8AM to 6PM).</p>
+          <button class="btn btn-outline" id="newBtn" type="button">Start Another Inquiry</button>
+        </section>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow dark">Contact</p>
+          <h2 id="contact-title">Contact Astoria Palawan</h2>
+          <p>Contact details below are copied from the resort's official website (checked when this project was built). Please confirm them there.</p>
+        </header>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h3>Address</h3>
+            <p>Km. 62, North National Highway, Barangay San Rafael,<br>Puerto Princesa City, Palawan, Philippines 5300</p>
+            <h3>Reservations <span class="tag">office hours 8AM to 6PM</span></h3>
+            <p><a href="mailto:reservations@astoriapalawan.com">reservations@astoriapalawan.com</a><br>(+632) 8687-1111 loc. 8302<br>(+63) 998-961-3419</p>
+            <h3>Corporate Sales</h3>
+            <p><a href="mailto:sales@astoriapalawan.com">sales@astoriapalawan.com</a><br>(+632) 8687-1111 loc. 8016<br>(+63) 917-559-4341</p>
+            <h3>Palawan Front Office</h3>
+            <p>(+63) 998-961-3422</p>
+            <h3>Follow the Astoria Group</h3>
+            <ul class="social">
+              <li><a href="https://facebook.com/astoriahotelsandresorts" target="_blank" rel="noopener">Facebook</a></li>
+              <li><a href="https://instagram.com/astoriahotelsandresorts" target="_blank" rel="noopener">Instagram</a></li>
+              <li><a href="https://youtube.com/c/AstoriaHotelsandResorts" target="_blank" rel="noopener">YouTube</a></li>
+              <li><a href="https://tiktok.com/@theastoriagroup" target="_blank" rel="noopener">TikTok</a></li>
+            </ul>
+          </div>
+          <div class="map-wrap">
+            <iframe title="Map showing Astoria Palawan, Puerto Princesa" src="https://www.google.com/maps?q=Astoria+Palawan+Puerto+Princesa&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            <a class="link-arrow" href="https://www.google.com/maps/search/?api=1&query=Astoria+Palawan+Puerto+Princesa" target="_blank" rel="noopener">Open in Google Maps</a>
+          </div>
+        </div>
+
+        <div class="contact-lower">
+          <div>
+            <h3>Frequently asked questions</h3>
+            <p class="small">The resort's own FAQ page was empty when checked, so these answers use verified details from its Home, About and Contact pages.</p>
+            <div class="faq">
+              <details><summary>How far is the resort from the airport?</summary><p>About 90 minutes from Puerto Princesa International Airport, per the official site.</p></details>
+              <details><summary>How do I get there?</summary><p>Options listed on the official About page include an exclusive van transfer, shared shuttle, city shuttle, taxi or van, or a bus toward Roxas or El Nido that passes the resort. See the Getting There section above and confirm with the resort.</p></details>
+              <details><summary>What are the reservations office hours?</summary><p>8AM to 6PM.</p></details>
+              <details><summary>What are the pool hours?</summary><p>The Pod, Premier Pod and Nestling Pool are listed as open 6:00 AM to 10:00 PM.</p></details>
+              <details><summary>Where can I see real room rates?</summary><p>Use "View Rates" or "Check Availability" on <a href="https://astoriapalawan.com/" target="_blank" rel="noopener">astoriapalawan.com</a>, or the <a href="https://book-directonline.com/properties/AstoriaPalawandirect" target="_blank" rel="noopener">official booking site</a>. Prices on this project are illustrative.</p></details>
+              <details><summary>Does this website take bookings?</summary><p>No. It is a static school project. Its forms are demonstrations only.</p></details>
+            </div>
+          </div>
+
+          <form id="contactForm" class="form" novalidate>
+            <h3>Send a message (demo)</h3>
+            <p class="alert alert-warn">Demo form: your message is <strong>not</strong> sent to the resort or stored.</p>
+            <div class="field">
+              <label for="cName">Your name <span aria-hidden="true">*</span></label>
+              <input id="cName" type="text" autocomplete="name" required aria-describedby="cName-err">
+              <p class="error" id="cName-err" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="cEmail">Email <span aria-hidden="true">*</span></label>
+              <input id="cEmail" type="email" autocomplete="email" required aria-describedby="cEmail-err">
+              <p class="error" id="cEmail-err" aria-live="polite"></p>
+            </div>
+            <div class="field">
+              <label for="cMsg">Message <span aria-hidden="true">*</span></label>
+              <textarea id="cMsg" rows="4" required minlength="10" aria-describedby="cMsg-err"></textarea>
+              <p class="error" id="cMsg-err" aria-live="polite"></p>
+            </div>
+            <button class="btn btn-green" type="submit">Send (Demo)</button>
+            <p id="contactResult" class="alert alert-ok" hidden role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-labelledby="footer-brand">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <p class="brand-footer" id="footer-brand">Astoria Palawan</p>
+        <p class="footer-tag">Resort in Puerto Princesa, Palawan</p>
+        <p>An eight-hectare resort on the Sulu Sea shore, surrounded by forest, grasslands and mountains, with large pools, a waterpark next door and Filipino and international dining.</p>
+      </div>
+      <nav aria-label="Footer">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#rooms">Rooms &amp; Amenities</a></li>
+          <li><a href="#restaurant">Restaurant</a></li>
+          <li><a href="#packages">Packages</a></li>
+          <li><a href="#reservations">Reservations</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h4>Find &amp; Contact</h4>
+        <address>
+          Km. 62, North National Highway,<br>Barangay San Rafael,<br>Puerto Princesa City, Palawan 5300<br>
+          <a href="mailto:reservations@astoriapalawan.com">reservations@astoriapalawan.com</a><br>
+          (+63) 998-961-3419<br>
+          <span class="footer-hours">Reservations office: 8AM to 6PM</span>
+        </address>
+        <p class="footer-note">Details from <a href="https://astoriapalawan.com/" target="_blank" rel="noopener">astoriapalawan.com</a>. Please confirm there.</p>
+      </div>
+      <div>
+        <h4>Official Social Media</h4>
+        <ul class="footer-social">
+          <li><a href="https://facebook.com/astoriahotelsandresorts" target="_blank" rel="noopener">Facebook</a></li>
+          <li><a href="https://instagram.com/astoriahotelsandresorts" target="_blank" rel="noopener">Instagram</a></li>
+          <li><a href="https://youtube.com/c/AstoriaHotelsandResorts" target="_blank" rel="noopener">YouTube</a></li>
+          <li><a href="https://tiktok.com/@theastoriagroup" target="_blank" rel="noopener">TikTok</a></li>
+        </ul>
+        <p class="footer-note">Accounts of the Astoria Group, as linked on the official website.</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p class="footer-disclaimer"><strong>Disclaimer:</strong> This is an unofficial academic project and is not affiliated with or endorsed by Astoria Palawan. Names and facts belong to their owners and are used for educational reference. Photos are generic stock images, prices marked &ldquo;Demo&rdquo; are illustrative, and the forms do not process real reservations.</p>
+      <div class="footer-meta">
+        <p class="copyright">&copy; 2026 Astoria Palawan Academic Website Project. All Rights Reserved.</p>
+        <p class="dev-credit">Designed &amp; Developed by <span class="dev-name">def_not_navs</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#top" class="to-top" id="toTop" aria-label="Back to top" hidden>&uarr;</a>
+  <script src="js/script.js"></script>
+</body>
+</html>
